@@ -6,17 +6,18 @@ Converts some Metric units to Imperial units, and vice versa
 
 Currently supported conversions:
 
-Temperature Conversion:
+Temperature Conversion:<br/>
     Celsius <-> Fahrenheit 
     
-Length Conversion:
-    Millimeter <-> Inches 
-    Centimeter <-> Inches 
-    Meter <-> Yard
-    Kilometer <-> Mile
+Length Conversion:<br/>
+    Millimeter <-> Inches <br/>
+    Centimeter <-> Inches <br/>
+    Meter <-> Yard<br/>
+    Kilometer <-> Mile<br/>
 
-Mass Conversion:
-    Milligrams <-> Grain
-    Grams <-> Oz
-    Kilogram <-> lb
-    Kilograms <-> Ton
+Mass Conversion:<br/>
+    Milligrams <-> Grain<br/>
+    Grams <-> Oz<br/>
+    Kilogram <-> lb<br/>
+    Kilograms <-> Ton<br/>
+    
