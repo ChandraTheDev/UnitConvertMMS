@@ -1,5 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Serilog;
 using Serilog.Events;
+using UnitConvertMMS.Data;
+
 
 namespace UnitConvertMMS
 {
@@ -20,8 +24,10 @@ namespace UnitConvertMMS
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
-            builder.Services.AddControllers();
+            builder.Services.AddDbContext<DatabaseContext>(optionsAction =>
+            {
+                optionsAction.UseSqlServer(builder.Configuration.GetConnectionString("sqlConnectionString"));
+            });
 
             builder.Services.AddCors(o =>
             {
@@ -37,6 +43,7 @@ namespace UnitConvertMMS
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddControllers();
             builder.Logging.ClearProviders();
             builder.Host.UseSerilog();
 
