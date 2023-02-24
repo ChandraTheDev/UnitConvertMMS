@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UnitConvertMMS.Data;
 
@@ -10,9 +11,11 @@ using UnitConvertMMS.Data;
 namespace UnitConvertMMS.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20230224172008_SeedingData2")]
+    partial class SeedingData2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -155,7 +158,7 @@ namespace UnitConvertMMS.Migrations
                             CategoryId = 3,
                             ImperialUnitName = "ton",
                             MetricUnitName = "kg",
-                            RateMetricToImperial = 0.001
+                            RateMetricToImperial = 0.98419999999999996
                         },
                         new
                         {
@@ -228,7 +231,7 @@ namespace UnitConvertMMS.Migrations
                             CategoryId = 3,
                             ImperialUnitName = "kg",
                             MetricUnitName = "ton",
-                            RateMetricToImperial = 1000.0
+                            RateMetricToImperial = 907.18499999999995
                         });
                 });
 

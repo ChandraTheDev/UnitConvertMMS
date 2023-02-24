@@ -100,7 +100,79 @@ namespace UnitConvertMMS.Data
                     CategoryId = 3,
                     MetricUnitName = "kg",
                     ImperialUnitName = "ton",
-                    RateMetricToImperial = 0.9842
+                    RateMetricToImperial = 0.001
+                },
+                new UnitRate()
+                {
+                    Id = 10,
+                    CategoryId = 1,
+                    MetricUnitName = "f",
+                    ImperialUnitName = "c",
+                    Formula = "(X-32)*5/9"
+                },
+                new UnitRate()
+                {
+                    Id = 11,
+                    CategoryId = 2,
+                    MetricUnitName = "in",
+                    ImperialUnitName = "mm",
+                    RateMetricToImperial = 25.4
+                },
+                new UnitRate()
+                {
+                    Id = 12,
+                    CategoryId = 2,
+                    MetricUnitName = "in",
+                    ImperialUnitName = "cm",
+                    RateMetricToImperial = 2.54
+                },
+                new UnitRate()
+                {
+                    Id = 13,
+                    CategoryId = 2,
+                    MetricUnitName = "yd",
+                    ImperialUnitName = "m",
+                    RateMetricToImperial = 0.9144
+                },
+                new UnitRate()
+                {
+                    Id = 14,
+                    CategoryId = 2,
+                    MetricUnitName = "mile",
+                    ImperialUnitName = "km",
+                    RateMetricToImperial = 1.6093
+                },
+                new UnitRate()
+                {
+                    Id = 15,
+                    CategoryId = 3,
+                    MetricUnitName = "grain",
+                    ImperialUnitName = "mg",
+                    RateMetricToImperial = 64.7989
+                },
+                new UnitRate()
+                {
+                    Id = 16,
+                    CategoryId = 3,
+                    MetricUnitName = "oz",
+                    ImperialUnitName = "g",
+                    RateMetricToImperial = 28.3495
+                },
+                new UnitRate()
+                {
+                    Id = 17,
+                    CategoryId = 3,
+                    MetricUnitName = "lb",
+                    ImperialUnitName = "kg",
+                    RateMetricToImperial = 0.453592
+                },
+                new UnitRate()
+                {
+                    Id = 18,
+                    CategoryId = 3,
+                    MetricUnitName = "ton",
+                    ImperialUnitName = "kg",
+                    RateMetricToImperial = 1000
                 }
                 );
 

@@ -3,7 +3,8 @@ using Microsoft.Extensions.Configuration;
 using Serilog;
 using Serilog.Events;
 using UnitConvertMMS.Data;
-
+using UnitConvertMMS.IRepository;
+using UnitConvertMMS.Repository;
 
 namespace UnitConvertMMS
 {
@@ -38,7 +39,7 @@ namespace UnitConvertMMS
                     .AllowAnyHeader();
                 });
             });
-
+            builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
